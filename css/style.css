@@ -1,18 +1,29 @@
+@font-face {
+	font-family: quicksand-bold;
+	src: url('../font/Quicksand/Quicksand-Bold.ttf');
+}
+@font-face {
+	font-family: Lato;
+	src:url('../font/Lato/Lato-Bold.ttf');
+}
 body{
 	margin:0px;
 	padding: 0px;
-	font-family: 'Quicksand', sans-serif;
+	font-family: quicksand-bold;
 }
 .layout {
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
 .header {
 	width: 100%;
-	height: 13%;
+	height: 10%;
 	text-align: center;
 	position: absolute;
 	position: fixed;
 	z-index: 1;
+	margin-top: -1%;
 }
 a {
 	text-decoration: none;
@@ -23,7 +34,7 @@ a {
 }
 .menu {
 	float: right;
-	margin-top: 3%;
+	margin-top: 2%;
 	width: 83%;
 	
 }
@@ -41,7 +52,7 @@ a {
 .header:hover {
 	border: 1px solid #00bcd4;
 }
-.logo1 {
+.logo-header {
 	float: left;
     height: 40px;
     width: 10%;
@@ -49,25 +60,24 @@ a {
 
 }
 .header-right {
-	width: 49%;
+	width: 47%;
 	float: right;
 	line-height: 80px;
 	text-align: center;
 }
-.logout {
+.signin {
 
 	float: right;
 	margin-top: 3%;
-	margin-right: 5%;
-	width: 20%;
-  	height: 40px;
+	margin-right: 3%;
+	width: 16%;
+  	height: 35px;
   	border-radius: 100px;
   	background-color: #00bcd4;
-  	line-height: 40px;
+  	line-height: 35px;
 }
-.logout p{
+.signin a{
 	margin-top: -1%;
-	margin-left: 20%;
   	height: 17px;
   	font-family: Lato;
  	font-size: 14px;
@@ -77,10 +87,10 @@ a {
   	color: #ffffff;
 
 }
-.logout img {
+.signin img {
 	float: right;
 	margin-right: 10%;
-	margin-top: -15%;
+	margin-top: 8%;
 }
 .login {
 	float: right;
@@ -92,39 +102,51 @@ a {
   	text-align: left;
   	color: #00bcd4;
 }
-.icon1 {
+.icon-seach {
 	float: right;
-	margin-top: 10px;
-	margin-right: 5%;
 }
 .body {
 	width: 100%;
 }
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.section{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 5%;
+	border: 1px solid black;
+}
 .side-bar {
-	width: 49%;
+	width: 50%;
 	float: right;
 }
 .side-bar img{
 	width: 100%;
+	height: 100%;
 }
 .content {
-	width: 49%;
+	width: 50%;
 	float: left;
 }
-.logo2 {
+.logo-content {
 	float: left;
-	padding-left: 27%;
-	padding-top: 20%;
+	padding-left: 22%;
+	padding-top: 15%;
 }
-.text1 {
-	font-size: 54px;
+.text-sommer-is-often-syn {
+	font-size: 50px;
   	font-weight: bold;
   	text-align: left;
   	color: #00bcd4;
   	padding-left: 27%;
-	padding-top: 30%;
+	padding-top: 25%;
+	width: 70%;
 }
-.text2 {
+.text-sommer-is-often {
     font-family: Lato;
   	font-size: 16px;
   	line-height: 1.5;
@@ -132,6 +154,7 @@ a {
   	color: #673ab7;
   	padding-left: 27%;
   	margin-top: -2%;
+  	width: 74%;
 }
 .find-more {
   	border-radius: 100px;
@@ -147,7 +170,7 @@ a {
 	margin-bottom: -5px;
 	margin-left: 10px;
 }
-.sigin {
+.signin-try {
   	border-radius: 100px;
   	background-color: #e91e63;
   	margin-left: 50%;
@@ -156,19 +179,19 @@ a {
   	margin-top: -50px;
   	width: 30%;
 }
-.sigin img{
+.signin-try img{
 	margin-bottom: -5px;
 	margin-left: 10px;
 }
-.sigin a{
+.signin-try a{
 	color:white;
 }
 .foot {
-	width: 100%;
+	width: 99%;
 	height: 7%;
 	position: absolute;
 	position: fixed;
-	margin-top: 40%;
+	margin-top: -85%;
 	/*border: solid 2px #673ab7;*/
 }
 .subport {
@@ -196,11 +219,62 @@ a {
 	width: 70%;
 	margin-left: 14%;
 }
-.fill-1 {
-	width: 76px;
-  	height: 19px;
-  	border-radius: 20px;
-  	background-color: #00bcd4;	
-  	margin-left: 176px;
-  	margin-top: 286px;
+.content-section-2 {
+	width: 88%;
+	text-align: center;
+}
+.content-section-2 img {
+	width: 70%;
+	height: auto;
+}
+.content-section-2 h2{	
+	text-align: center;
+	padding-right: 5%;
+}
+.content-section-2 p {
+	font-family: Lato;
+	width: 100%;
+	text-align: left;
+}
+.content-section-2 div {
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20%;
+	margin-top: 20%;
+	text-align: center;
+	width: 60%;
+	border-radius: 100px;
+  	background-color: #00bcd4;
+}
+.content-section-2 div a{
+	color: white;
+}
+.content-familiar {
+	width: 25%;
+	margin-top: 5%;
+    margin-left: 5%;
+	float: left;
+}
+.content-basic {
+	width: 25%;
+	margin-top: 4%;
+    margin-left: 8%;
+	float: left;
+}
+.content-familiar div div{
+	margin-top: 32%;
+}
+.content-basic div div {
+	margin-top: 8%;
+	background-color: #673ab7;
+}
+.content-advance {
+	width: 25%;
+	margin-top: 4%;
+    margin-left: 8%;
+	float: left;
+}
+.content-advance div div {
+	margin-top: 22%;
+	background-color: #e91e63;
 }

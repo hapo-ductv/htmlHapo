@@ -281,7 +281,7 @@ a {
 	position: fixed;
 	margin-top: -350%;
 }
-.subport {
+.support {
 	text-align: center;
   	width: 8%;
   	line-height: 30px;
@@ -289,7 +289,7 @@ a {
   	background-color: #ffc107;
   	float: right;
 }
-.subport img {
+.support img {
 	width: 20%;
 	margin-bottom: -5%;
 	margin-right: -5%;

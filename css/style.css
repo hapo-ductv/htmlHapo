@@ -1,10 +1,10 @@
 @font-face {
 	font-family: quicksand-bold;
-	src: url('font/Quicksand/Quicksand-Bold.ttf');
+	src: url('../font/Quicksand/Quicksand-Bold.ttf');
 }
 @font-face {
 	font-family: Lato;
-	src:url('font/Lato/Lato-Regular.ttf');
+	src:url('../font/Lato/Lato-Regular.ttf');
 }
 body{
 	margin:0px;
@@ -261,6 +261,8 @@ a span {
 	margin-left: 27%;
 	margin-top: 5%;
     width: 16%;
+    position: relative;
+    z-index: 15;
 }
 .find-more a {
   	border-radius: 100px;
@@ -276,6 +278,8 @@ a span {
 	margin-left: 46%;
 	margin-top: -53px;
 	width: 20%;
+	position: relative;
+	z-index: 15;
 }
 .signin-try a{
 	border-radius: 100px;
@@ -356,6 +360,8 @@ a span {
 	margin-top: 20%;
 	text-align: center;
 	width: 50%;
+	position: relative;
+	z-index: 15;
 
 }
 .content-section-2 div a{
@@ -826,6 +832,8 @@ a span {
     width: 26%;
     border: none;
     color: white;
+    position: relative;
+    z-index: 15;
 }
 .btn-submit span {
 	color: white;

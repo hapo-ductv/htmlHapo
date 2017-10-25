@@ -4,17 +4,19 @@
 }
 @font-face {
 	font-family: Lato;
-	src:url('../font/Lato/Lato-Bold.ttf');
+	src:url('../font/Lato/Lato-Regular.ttf');
 }
 body{
 	margin:0px;
 	padding: 0px;
 	font-family: quicksand-bold;
+
 }
 .layout {
 	position: relative;
 	width: 1920px;
 	max-height: 8640px;
+	overflow-x: hidden;
 }
 .header {
 	width: 100%;
@@ -27,6 +29,10 @@ body{
 }
 a {
 	text-decoration: none;
+	font-family: Lato;
+}
+a span {
+	margin-left: 11px;
 }
 .header-left {
 	float: left;
@@ -71,9 +77,8 @@ a {
 	margin-top: 2%;
 	margin-right: 3%;
 	height: 40px;
-    width: 15%;
-  	border-radius: 100px;
-  	background-color: #00bcd4;
+    width: 125px;
+
   	line-height: 35px;
 }
 .signin a{
@@ -85,6 +90,9 @@ a {
   	letter-spacing: 0.2px;
   	text-align: left;
   	color: #ffffff;
+  	border-radius: 100px;
+  	background-color: #00bcd4;
+  	padding: 11px 23px;
 
 }
 .signin img {
@@ -102,6 +110,9 @@ a {
   	text-align: left;
   	color: #00bcd4;
     margin-right: -4%;
+}
+.login a{
+	color: #00bcd4;
 }
 .icon-seach {
 	float: right;
@@ -129,17 +140,27 @@ a {
 .btn-side-bar-1 {
     position: absolute;
     top: 48%;
-    border: 2px solid #00bcd4;
     text-align: center;
     color: #00bcd4;
     left: 2%;
+}
+.btn-side-bar-1 a{
+	border: 2px solid #00bcd4;
+}
+.btn-side-bar-2 a{
+	border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #e91e63;
+}
+.btn-side-bar-2 a span {
+	margin-left: 0px;
 }
 .btn-side-bar-2 {
     position: absolute;
     top: 48%;
     text-align: center;
     color: white;
-    margin-left: 90%;
+    margin-left: 87%;
 }
 .btn-side-bar-3 {
     position: absolute;
@@ -152,8 +173,8 @@ a {
     top: 88%;
     text-align: center;
 	left: 11%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border: 4px solid #e91e63;
     border-radius: 50%;
 }
@@ -162,8 +183,8 @@ a {
     top: 88%;
     text-align: center;
 	left: 15%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border: 4px solid #b1d136;
     border-radius: 50%;
 }
@@ -172,8 +193,8 @@ a {
     top: 88%;
     text-align: center;
 	left: 19%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border: 4px solid #ffc107;
     border-radius: 50%;
 }
@@ -239,37 +260,34 @@ a {
   	width: 51%;
 }
 .find-more {
+	margin-left: 27%;
+	margin-top: 5%;
+    width: 16%;
+}
+.find-more a {
   	border-radius: 100px;
   	background-color: #ffffff;
 	border: 2px solid #673ab7;
   	text-align: center;
-    width: 16%;
-    line-height: 50px;
-  	margin-left: 27%;
+    line-height: 50px; 	
   	font-size: 69%;
-  	margin-top: 5%;
-}
-.find-more img{
-	margin-bottom: -5px;
-	margin-left: 10px;
+  	color: #673ab7;
+  	padding: 16px 23px 16px 25px;
 }
 .signin-try {
-	border-radius: 100px;
-    background-color: #e91e63;
-    margin-left: 46%;
-    text-align: center;
-    line-height: 50px;
-    margin-top: -53px;
-    font-size: 70%;
-    width: 20%;
-    height: 50px;
-}
-.signin-try img{
-	margin-bottom: -5px;
-	margin-left: 10px;
+	margin-left: 46%;
+	margin-top: -53px;
+	width: 20%;
 }
 .signin-try a{
-	color:white;
+	border-radius: 100px;
+    background-color: #e91e63; 
+    text-align: center;
+    line-height: 50px;  
+    font-size: 70%;
+    padding: 18px 41px;
+    height: 50px;
+    color:white;
 }
 .ti-angle-double-right {
     margin-left: -3px;
@@ -277,14 +295,13 @@ a {
 .foot {
 	width: 99%;
 	height: 7%;
-	position: absolute;
 	position: fixed;
-	margin-top: -350%;
+	margin-top: -434%;
 }
 .support {
 	text-align: center;
-  	width: 8%;
-  	line-height: 30px;
+  	width: 120px;
+  	line-height: 40px;
 	border-radius: 100px;
   	background-color: #ffc107;
   	float: right;
@@ -297,8 +314,9 @@ a {
 .back-top {
 	margin-top: 2%;
 	background-color: #00bcd4;
-	width: 16px;
-    height: 18px;
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
 	margin-left: 2%;
 	border-radius: 100px;
 }
@@ -325,6 +343,7 @@ a {
 	text-align: center;
 	padding-right: 5%;
 	color: #00bcd4;
+	font-family: quicksand-bold;
 }
 .content-section-2 p {
 	font-family: Lato;
@@ -339,11 +358,13 @@ a {
 	margin-top: 20%;
 	text-align: center;
 	width: 50%;
-	border-radius: 100px;
-  	background-color: #00bcd4;
+
 }
 .content-section-2 div a{
 	color: white;
+	border-radius: 100px;
+  	background-color: #00bcd4;
+  	padding: 16px 43px;
 }
 .content-familiar {
 	width: 25%;
@@ -363,7 +384,7 @@ a {
 .content-familiar div div{
 	margin-top: 23%;
 }
-.content-basic div div {
+.content-basic div div a {
 	margin-top: 18%;
 	background-color: #673ab7;
 }
@@ -373,7 +394,7 @@ a {
     margin-left: 8%;
 	float: left;
 }
-.content-advance div div {
+.content-advance div div a {
 	margin-top: 17%;
 	background-color: #e91e63;
 }
@@ -431,13 +452,19 @@ a {
 	list-style-type:none;
 }
 .btn-signin {
-	border-radius: 100px;
-    background-color: #00bcd4;
+
     text-align: center;
     width: 29%;
     line-height: 50px;
     margin-left: 32%;
     margin-top: 10%;
+
+}
+.btn-signin a{
+    color: white;
+	border-radius: 100px;
+    background-color: #00bcd4;
+    padding: 16px 43px;
 }
 .content-section-3-right {
 	width: 60%;
@@ -522,30 +549,40 @@ a {
 	height: 100%;
 	position: relative;
 }
-.btn-section-5-1 {
-	border: 2px solid #00bcd4;
-    text-align: center;
-    color: #00bcd4;
+.btn-section-5-1 {	
+    text-align: center; 
     width: 83px;
     height: 30px;
-    line-height: 30px;
-    border-radius: 20px;
+    line-height: 30px; 
     position: absolute;
     top: 48%;
     left: 1%;
     font-size: 14px;
 }
+.btn-section-5-1 a {
+	border: 2px solid #00bcd4;
+	padding: 5px 10px;
+	border-radius: 20px;
+	color: #00bcd4;
+}
 .btn-section-5-2 {
 	width: 83px;
-    text-align: center;
-    color: white;
+    text-align: center;   
     height: 30px;
-    line-height: 30px;
-    border-radius: 20px;
+    line-height: 30px;   
     position: absolute;
     top: 48%;
     left: 95%;
     font-size: 14px;
+}
+.btn-section-5-2 a {
+	border-radius: 20px;
+	color: white;
+	padding: 5px 10px;
+	background-color: #e91e63;
+}
+.btn-section-5-2 a span {
+	margin-left: 0px;
 }
 .btn-section-5-3 {
 	position: absolute;
@@ -573,28 +610,28 @@ a {
 }
 .btn-section-5-6 {
 	position: absolute;
-    top: 837px;
+    top: 840px;
     left: 62%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: 4px solid #e91e63;
 }
 .btn-section-5-7 {
 	position: absolute;
-    top: 837px;
+    top: 840px;
     left: 64%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: 4px solid #b1d136;
 }
 .btn-section-5-8 {
 	position: absolute;
-    top: 837px;
+    top: 840px;
     left: 66%;
-    width: 19px;
-    height: 19px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: 4px solid #ffc107;
 }
@@ -636,6 +673,11 @@ a {
 	padding-bottom: 10%;
 	width: 100%;
 }
+.section-6-content-list:hover {
+	box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.25);
+    cursor: pointer;
+}
 .section-6-content-list {
 	width: 35%;
 	margin-left: 10%;
@@ -643,6 +685,10 @@ a {
 	position: relative;
 	margin-bottom: 11%;
 	margin-top: 1%;
+	/*setup time hover*/
+	transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 }
 .section-6-btn-1 {
 	width: 76px;
@@ -706,27 +752,27 @@ a {
 }
 .user-input {
 	position: absolute;
-    top: 316px;
+    top: 352px;
     left: 245px;
 }
 .email-input {
 	position: absolute;
-    top: 381px;
+    top: 415px;
     left: 245px;
 }
 .mobile-input {
 	position: absolute;
-    top: 440px;
+    top: 476px;
     left: 245px;
 }
 .heart-input {
 	position: absolute;
-	top: 505px;
+	top: 539px;
     left: 245px;
 }
 .comment-input {
 	position: absolute;
-    top: 550px;
+    top: 587px;
     left: 245px;
 }
 .section-7-content-left li {
@@ -744,6 +790,9 @@ a {
   	padding-left: 5%;
   	width: 450px;
 }
+.form-input:hover {
+	border: solid 2px #673ab7;
+}
 .from-input-select {
 	border-radius: 100px;
   	background-color: #ffffff;
@@ -751,6 +800,9 @@ a {
 	height: 56px;
     padding-left: 5%;
     width: 480px;
+}
+.from-input-select:hover {
+	border: solid 2px #673ab7;
 }
 .form-input-area {
 	border-radius: 20px;
@@ -761,17 +813,26 @@ a {
     width: 441px;
     resize: none;
 }
+.form-input-area:hover {
+	border: solid 2px #673ab7;
+}
 .section-7-content-left li {
 	margin-top: 1%;
 }
 .section-7-content-left h2 {
-	padding-left: 8%;
+	padding-left: 6%;
+	font-size: 36px;
   	color: #00bcd4;
 }
-.btn-supmit {
-	margin-left: 40%;
+.btn-submit {
+	margin-left: 39%;
     margin-top: 5%;
     width: 26%;
+    border: none;
+    color: white;
+}
+.btn-submit span {
+	color: white;
 }
 .section-7-content-right {
 	width: 50%;
@@ -789,16 +850,16 @@ a {
   	height: 19px;
   	border-radius: 20px;
   	position: absolute;
-  	top: 258px;
-    left: 503px;
+  	top: 276px;
+    left: 539px;
 }
 .section-7-btn-2 {
   	width: 21px;
   	height: 19px;
  	border-radius: 20px;
  	position: absolute;
- 	top: 258px;
-    left: 633px;
+ 	top: 276px;
+    left: 656px;
 }
 .section-7-bot {
 	padding-bottom: 0%;
@@ -846,7 +907,7 @@ li {
 	width: 25%;
 	position: absolute;
 	left: 74%;
-    top: 31%;
+    top: 39%;
 }
 .fb-footer iframe {
     width: 450px;
@@ -931,24 +992,29 @@ li {
 	opacity: 1;
 }
 .btn-1 {
-    width: 8%;
-    height: 2%;
+    width: 76px;
+    height: 19px;
     border-radius: 35px;
 }
 .btn-2 {
- 	width: 2%;
-    height: 2%;
+ 	width: 25px;
+    height: 19px;
     border-radius: 35px;
 }
 .btn-3 {
-    width: 11%;
-    height: 2%;
+    width: 88px;
+    height: 19px;
     border-radius: 24px;
 }
 .btn-side-bar {
 	width: 8%;
     height: 30px;
-    border-radius: 20px;
+
     font-size: 14px;
     line-height: 30px;
+}
+.btn-side-bar a{
+	border-radius: 20px;
+	padding: 5px 10px;
+	color: white;
 }

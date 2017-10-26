@@ -6,6 +6,14 @@
 	font-family: Lato;
 	src:url('../font/Lato/Lato-Regular.ttf');
 }
+@font-face {
+	font-family: VNFquicksand;
+	src:url('../font/Quicksand/vnf-quicksand-bold.ttf');
+}
+@font-face {
+	font-family: Lato-bold;
+	src:url('../font/Lato/Lato-Bold.ttf');
+}
 body{
 	margin:0px;
 	padding: 0px;
@@ -84,7 +92,6 @@ a span {
   	height: 17px;
   	font-family: Lato;
  	font-size: 14px;
-  	font-weight: bold;
   	letter-spacing: 0.2px;
   	text-align: left;
   	color: #ffffff;
@@ -139,16 +146,26 @@ a span {
     position: absolute;
     top: 48%;
     text-align: center;
-    color: #00bcd4;
+ 
     left: 2%;
+    transform-origin: 50% 50%;
 }
 .btn-side-bar-1 a{
 	border: 2px solid #00bcd4;
+	color: #00bcd4;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+.btn-side-bar-1 a span {
+	margin-left: 0px;
 }
 .btn-side-bar-2 a{
 	border-radius: 20px;
-    padding: 5px 10px;
+    padding: 7px 10px;
     background-color: #e91e63;
+    color: white;
+    position: absolute;
+	transform: translate(0px, -50%);
 }
 .btn-side-bar-2 a span {
 	margin-left: 0px;
@@ -157,14 +174,15 @@ a span {
     position: absolute;
     top: 48%;
     text-align: center;
-    color: white;
-    margin-left: 87%;
+    left: 88%;
+    transform-origin: 50% 50%;
 }
 .btn-side-bar-3 {
     position: absolute;
     top: 954px;
     text-align: center;
     left: 2%;
+    transform-origin: 50% 50%;
 }
 .btn-side-bar-4 {
     position: absolute;
@@ -175,6 +193,7 @@ a span {
     height: 14px;
     border: 4px solid #e91e63;
     border-radius: 50%;
+    transform-origin: 50% 50%;
 }
 .btn-side-bar-5 {
     position: absolute;
@@ -185,6 +204,7 @@ a span {
     height: 14px;
     border: 4px solid #b1d136;
     border-radius: 50%;
+    transform-origin: 50% 50%;
 }
 .btn-side-bar-6 {
     position: absolute;
@@ -195,6 +215,7 @@ a span {
     height: 14px;
     border: 4px solid #ffc107;
     border-radius: 50%;
+    transform-origin: 50% 50%;
 }
 .side-bar img{
 	width: 100%;
@@ -208,28 +229,28 @@ a span {
 }
 .btn-content-1 {
 	position: absolute;
-	top: 26%;
+	top: 28%;
     left: 18%;
 }
 .btn-content-2 {
 	position: absolute;
-    top: 29%;
-    left: 24%;
+    top: 31%;
+    left: 23%;
 }
 .btn-content-3 {
 	position: absolute;
-	top: 55%;
-    left: 75%;
+	top: 60%;
+    left: 76%;
 }
 .btn-content-4 {
 	position: absolute;
-	top: 55%;
-    left: 78%;
+    top: 60%;
+    left: 80%;
 }
 .btn-content-5 {
 	position: absolute;
-	top: 52%;
-    left: 80%;
+    top: 57%;
+    left: 82%;
 }
 .btn-side-bar-1 {
 
@@ -247,6 +268,7 @@ a span {
     padding-left: 27%;
     padding-top: 25%;
     width: 60%;
+    font-family: VNFquicksand;
 }
 .text-sommer-is-often {
     font-family: Lato;
@@ -270,14 +292,15 @@ a span {
 	border: 2px solid #673ab7;
   	text-align: center;
     line-height: 50px; 	
-  	font-size: 69%;
+  	font-size: 14px;
   	color: #673ab7;
   	padding: 16px 23px 16px 25px;
+  	font-weight: bold;
 }
 .signin-try {
 	margin-left: 46%;
 	margin-top: -53px;
-	width: 20%;
+	width: 27%;
 	position: relative;
 	z-index: 15;
 }
@@ -286,13 +309,14 @@ a span {
     background-color: #e91e63; 
     text-align: center;
     line-height: 50px;  
-    font-size: 70%;
+    font-size: 14px;
     padding: 18px 41px;
     height: 50px;
     color:white;
+    font-weight: bold;
 }
 .ti-angle-double-right {
-    margin-left: -3px;
+    margin-left: -5px;
 }
 .foot {
 	width: 99%;
@@ -302,11 +326,14 @@ a span {
 }
 .support {
 	text-align: center;
-  	width: 120px;
+  	width: 6%;
   	line-height: 40px;
 	border-radius: 100px;
   	background-color: #ffc107;
   	float: right;
+}
+.support a{
+	color: white;
 }
 .support img {
 	width: 20%;
@@ -321,6 +348,9 @@ a span {
     line-height: 40px;
 	margin-left: 2%;
 	border-radius: 100px;
+}
+.back-top span {
+	color: white;
 }
 .back-top img{
 	width: 70%;
@@ -345,7 +375,7 @@ a span {
 	text-align: center;
 	padding-right: 5%;
 	color: #00bcd4;
-	font-family: quicksand-bold;
+	font-family: VNFquicksand;
 }
 .content-section-2 p {
 	font-family: Lato;
@@ -369,6 +399,7 @@ a span {
 	border-radius: 100px;
   	background-color: #00bcd4;
   	padding: 16px 43px;
+  	font-weight: bold;
 }
 .content-familiar {
 	width: 25%;
@@ -424,41 +455,42 @@ a span {
 .user {
 	position: absolute;
     left: 30%;
-    top: 307px;
+    top: 310px;
 }
 .thumb-up {
 	position: absolute;
     left: 30%;
-    top: 378px;
+    top: 387px;
 }
 .cup {
 	position: absolute;
  	left: 30%;
-    top: 452px;
+    top: 464px;
 
 }
 .time {
 	position: absolute;
     left: 30%;
-    top: 524px;
+    top: 540px;
 }
 .content-pr {
-	font-family: quicksand-bold;
+	font-family: VNFquicksand;
 	text-align: justify;
 	color: #673ab7;
 	padding-left: 34%;
 	padding-top: 22%;
 	font-size: 24px;
 	position: relative;
+	font-weight: bold;
 }
 .content-pr li {
 	padding-top: 9%;
 	list-style-type:none;
 }
 .btn-signin {
-
+	transform-origin: 50% 50%;
     text-align: center;
-    width: 29%;
+    width: 31%;
     line-height: 50px;
     margin-left: 32%;
     margin-top: 10%;
@@ -469,10 +501,28 @@ a span {
 	border-radius: 100px;
     background-color: #00bcd4;
     padding: 16px 43px;
+    font-family: Lato;
+    font-weight: bold;
 }
 .content-section-3-right {
 	width: 60%;
 	float: left;
+}
+.section-3-control {
+    background-color: #673ab7;
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.3);
+    padding: 22px 25px;
+    width: 6%;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    top: 34%;
+    left: 65%;
+    border-radius: 45px;
+    transform: translate(12%,-28%);
+}
+.section-3-control span {
+	color: white;
 }
 .content-section-3-right div {
 	overflow:hidden;
@@ -524,20 +574,23 @@ a span {
 	font-size: 72%;
 }
 .section-4-ball {
-    width: 12%;
+    width: 20%;
     float: left;
-    margin-left: 125px;
+
 }
 .ball {
 	border-radius: 50%;
-	width: 100%;
+	width: 50%;
 	height: auto;
-	padding-top: 100%;
+	padding-top: 50%;
 	background-color: #d8d8d8;
+	margin-left: 28%;
 }
 .section-4-ball p {
 	text-align: center;
 	font-size: 24px;
+	font-family: VNFquicksand;
+	font-weight: bold;
 }
 .section-5-img {
 	width: 50%;
@@ -565,9 +618,11 @@ a span {
 }
 .btn-section-5-1 a {
 	border: 2px solid #00bcd4;
-	padding: 5px 10px;
+	padding: 0px 10px;
 	border-radius: 20px;
 	color: #00bcd4;
+	position: absolute;
+	transform:translate(-50%,-50%);
 }
 .btn-section-5-2 {
 	width: 83px;
@@ -582,8 +637,10 @@ a span {
 .btn-section-5-2 a {
 	border-radius: 20px;
 	color: white;
-	padding: 5px 10px;
+	padding: 1px 13px;
 	background-color: #e91e63;
+	position: absolute;
+	transform: translate(-46px,-50%);
 }
 .btn-section-5-2 a span {
 	margin-left: 0px;
@@ -592,24 +649,21 @@ a span {
 	position: absolute;
     top: 23%;
     left: 53%;
-    width: 76px;
-    height: 19px;
+    padding: 10px 37px;
     border-radius: 35px;
 }
 .btn-section-5-4 {
     position: absolute;
     top: 20%;
     left: 55%;
-    width: 38px;
-    height: 19px;
+    padding: 10px 18px;
     border-radius: 49px;
 }
 .btn-section-5-5 {
     position: absolute;
     top: 78%;
     left: 58%;
-    width: 60px;
-    height: 19px;
+	padding: 10px 31px;
     border-radius: 35px;
 }
 .btn-section-5-6 {
@@ -651,8 +705,9 @@ a span {
     padding-right: 6%;
 }
 .section-5-text-title p{
-	font-family: quicksand-bold;
+	font-family: VNFquicksand;
 	font-size: 36px;
+	font-weight: bold;
 }
 .teacher-lable {
 	color: #673ab7;
@@ -693,16 +748,14 @@ a span {
     -webkit-transition: all 1s;
 }
 .section-6-btn-1 {
-	width: 76px;
-    height: 19px;
+    padding: 10px 37px;
     position: absolute;
     top: 48px;
     left: -52px;
     border-radius: 20px;
 }
 .section-6-btn-2 {
-	width: 36px;
-    height: 19px;
+	padding: 10px 19px;
     position: absolute;
     top: 24px;
     left: -14px;
@@ -752,31 +805,6 @@ a span {
 	position: relative;
 	font-size: 16px;
 }
-.user-input {
-	position: absolute;
-    top: 352px;
-    left: 245px;
-}
-.email-input {
-	position: absolute;
-    top: 415px;
-    left: 245px;
-}
-.mobile-input {
-	position: absolute;
-    top: 476px;
-    left: 245px;
-}
-.heart-input {
-	position: absolute;
-	top: 539px;
-    left: 245px;
-}
-.comment-input {
-	position: absolute;
-    top: 587px;
-    left: 245px;
-}
 .section-7-content-left li {
 	list-style-type: none;
 	color: #000000;
@@ -790,10 +818,10 @@ a span {
   	border: solid 1px #00bcd4;
   	height: 50px;
   	padding-left: 5%;
-  	width: 450px;
+  	width: 61%;
 }
 .form-input:hover {
-	border: solid 2px #673ab7;
+	border: solid 1px #673ab7;
 }
 .from-input-select {
 	border-radius: 100px;
@@ -801,10 +829,10 @@ a span {
   	border: solid 1px #00bcd4;
 	height: 56px;
     padding-left: 5%;
-    width: 480px;
+    width: 66%;
 }
 .from-input-select:hover {
-	border: solid 2px #673ab7;
+	border: solid 1px #673ab7;
 }
 .form-input-area {
 	border-radius: 20px;
@@ -812,11 +840,25 @@ a span {
   	border: solid 1px #00bcd4;
 	height: 193px;
     padding-left: 5%;
-    width: 441px;
+    width: 60%;
     resize: none;
+    font-family: Lato;
+}
+.form {
+	position: relative;
+}
+.icon-form {
+	position: absolute;
+	top: 18px;
+    left: 17px;
+}
+
+.comment-input {
+    top: 4px;
+
 }
 .form-input-area:hover {
-	border: solid 2px #673ab7;
+	border: solid 1px #673ab7;
 }
 .section-7-content-left li {
 	margin-top: 1%;
@@ -827,13 +869,14 @@ a span {
   	color: #00bcd4;
 }
 .btn-submit {
-	margin-left: 39%;
+	margin-left: 38%;
     margin-top: 5%;
     width: 26%;
     border: none;
     color: white;
     position: relative;
     z-index: 15;
+    transform-origin: 50% 50%;
 }
 .btn-submit span {
 	color: white;
@@ -850,16 +893,14 @@ a span {
 	border:0;
 }
 .section-7-btn-1 {
-	width: 100px;
-  	height: 19px;
+    padding: 10px 46px;
   	border-radius: 20px;
   	position: absolute;
   	top: 276px;
     left: 539px;
 }
 .section-7-btn-2 {
-  	width: 21px;
-  	height: 19px;
+    padding: 10px 13px;
  	border-radius: 20px;
  	position: absolute;
  	top: 276px;
@@ -893,11 +934,11 @@ li {
 }
 
 .footer-content {
-	width: 9%;
+	width: 10%;
 	float: left;
 }
 .footer-content li {
-	margin-top: 22%;
+	margin-top: 19%;
 	font-size: 16px;
 }
 .footer-menu {
@@ -996,18 +1037,15 @@ li {
 	opacity: 1;
 }
 .btn-1 {
-    width: 76px;
-    height: 19px;
+	padding: 10px 37px;
     border-radius: 35px;
 }
 .btn-2 {
- 	width: 25px;
-    height: 19px;
+    padding: 10px 13px;
     border-radius: 35px;
 }
 .btn-3 {
-    width: 88px;
-    height: 19px;
+	padding: 10px 43px;
     border-radius: 24px;
 }
 .btn-side-bar {
@@ -1019,6 +1057,5 @@ li {
 }
 .btn-side-bar a{
 	border-radius: 20px;
-	padding: 5px 10px;
-	color: white;
+	padding: 0px 10px;
 }

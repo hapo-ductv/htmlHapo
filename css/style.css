@@ -58,7 +58,7 @@ a span {
 .header li {
 	float: left;
 	list-style-type:none;
-    height: 17px;
+
     padding-left: 6%;
     font-family: Lato;
     font-size: 14px;
@@ -89,7 +89,6 @@ a span {
 }
 .signin a{
 	margin-top: -1%;
-  	height: 17px;
   	font-family: Lato;
  	font-size: 14px;
   	letter-spacing: 0.2px;
@@ -108,7 +107,6 @@ a span {
 .login {
 	float: right;
 	width: 15%;
-  	height: 17px;
   	font-family: Lato;
  	font-size: 14px;
   	letter-spacing: 0.2px;
@@ -849,12 +847,13 @@ a span {
 }
 .icon-form {
 	position: absolute;
-	top: 18px;
+    top: 50%;
     left: 17px;
+    transform: translate(0px,-50%);
 }
 
 .comment-input {
-    top: 4px;
+    top: 12px;
 
 }
 .form-input-area:hover {

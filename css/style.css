@@ -4,21 +4,20 @@
 }
 @font-face {
 	font-family: Lato;
-	src:url('../font/Lato/Lato-Regular.ttf');
+	src:url('../font/font and icon/Lato-Regular.ttf');
 }
 @font-face {
 	font-family: VNFquicksand;
-	src:url('../font/Quicksand/vnf-quicksand-bold.ttf');
+	src:url('../font/font and icon/vnf-quicksand-bold.ttf');
 }
 @font-face {
 	font-family: Lato-bold;
-	src:url('../font/Lato/Lato-Bold.ttf');
+	src:url('../font/font and icon/Lato-Bold.ttf');
 }
 body{
 	margin:0px;
 	padding: 0px;
-	font-family: quicksand-bold;
-
+	font-family: Lato;
 }
 .layout {
 	position: relative;
@@ -260,8 +259,8 @@ a span {
     font-weight: bold;
     text-align: left;
     color: #00bcd4;
-    padding-left: 27%;
-    padding-top: 25%;
+	padding: 25% 27%;
+	padding-bottom: 0;
     width: 60%;
     font-family: VNFquicksand;
 }
@@ -343,6 +342,7 @@ a span {
     line-height: 40px;
 	margin-left: 2%;
 	border-radius: 100px;
+	position: fixed;
 }
 .back-top span {
 	color: white;
@@ -355,39 +355,31 @@ a span {
 	padding-top: 250px;
 }
 .content-section-2 {
-	width: 88%;
-	height: 100%;
+	width: 640px;
 	text-align: center;
+	float: left;
 }
 .content-section-2 a {
 	font-size: 70%;
 }
-.content-section-2 img {
-	width: 70%;
-	height: 100%;
-}
 .content-section-2 h2{	
-	text-align: center;
-	padding-right: 5%;
-	color: #00bcd4;
-	font-family: VNFquicksand;
+    text-align: center;
+    color: #00bcd4;
+    font-family: VNFquicksand;
+    font-weight: bold;
 }
 .content-section-2 p {
-	font-family: Lato;
-	width: 100%;
-	text-align: left;
-	text-align: justify;
+    font-family: Lato;
+    text-align: left;
+    padding: 0 140px;
+    text-align: justify
 }
-.content-section-2 div {
-	height: 50px;
-	line-height: 50px;
-	margin-left: 20%;
-	margin-top: 20%;
-	text-align: center;
-	width: 50%;
-	position: relative;
-	z-index: 15;
-
+.section-2-img {
+	width: 100%;
+	min-height: 390px;
+}
+.section-2-text {
+	min-height: 170px;
 }
 .content-section-2 div a{
 	color: white;
@@ -396,39 +388,16 @@ a span {
   	padding: 16px 43px;
   	font-weight: bold;
 }
-.content-familiar {
-	width: 25%;
-	margin-top: 5%;
-    margin-left: 5%;
-	float: left;
-}
-.content-basic {
-	width: 25%;
-	margin-top: 2%;
-    margin-left: 8%;
-	float: left;
-}
-.content-basic h2 {
+.content-section-2 .content-basic-h2 {
 	color: #673ab7;
 }
-.content-familiar div div{
-	margin-top: 23%;
-}
-.content-basic div div a {
-	margin-top: 18%;
+.content-section-2 .content-basic a{
 	background-color: #673ab7;
 }
-.content-advance {
-	width: 25%;
-	margin-top: 4%;
-    margin-left: 8%;
-	float: left;
-}
-.content-advance div div a {
-	margin-top: 17%;
+.content-section-2 .content-advance a{
 	background-color: #e91e63;
 }
-.content-advance h2{
+.content-section-2 .content-advance-h2{
 	color: #e91e63;
 }
 .section-3 {
@@ -579,7 +548,7 @@ a span {
 	height: auto;
 	padding-top: 50%;
 	background-color: #d8d8d8;
-	margin-left: 28%;
+	margin-left: 25%;
 }
 .section-4-ball p {
 	text-align: center;
@@ -746,14 +715,14 @@ a span {
     padding: 10px 37px;
     position: absolute;
     top: 48px;
-    left: -52px;
+    left: -61px;
     border-radius: 20px;
 }
 .section-6-btn-2 {
 	padding: 10px 19px;
     position: absolute;
     top: 24px;
-    left: -14px;
+    left: -25px;
     border-radius: 20px;
 }
 .section-6-text {
@@ -815,6 +784,9 @@ a span {
   	padding-left: 5%;
   	width: 61%;
 }
+select:focus,input:focus,textarea:focus {
+	outline: none;
+}
 .form-input:hover {
 	border: solid 1px #673ab7;
 }
@@ -857,7 +829,7 @@ a span {
 	border: solid 1px #673ab7;
 }
 .section-7-content-left li {
-	margin-top: 1%;
+	margin-top: 2%;
 }
 .section-7-content-left h2 {
 	padding-left: 6%;
@@ -930,25 +902,26 @@ li {
 }
 
 .footer-content {
-	width: 10%;
+	width: 12%;
 	float: left;
 }
 .footer-content li {
 	margin-top: 19%;
 	font-size: 16px;
 }
-.footer-menu {
+.menu-footer {
 	font-size: 19px;
+	width: 73%;
 }
 .footer-left {
-	margin-left: 8%;
+	margin-left: 11%;
 }
 .fb-footer {
 	float: left;
 	width: 25%;
 	position: absolute;
-	left: 74%;
-    top: 39%;
+	left: 71%;
+    top: 38%;
 }
 .fb-footer iframe {
     width: 450px;
